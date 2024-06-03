@@ -5,15 +5,15 @@
     </head>
 
     <body>        
-        <div id="container"></div>
     </body>
 
 <script>
 
     let humanScore = 0;
     let computerScore = 0;
+    
 
-        function getHumanChoice() {
+    function getHumanChoice() {
         let humanChoice = prompt("Rock, Paper, Scissors?").toLowerCase();
         if (humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors") {
             return humanChoice;
@@ -21,14 +21,14 @@
             alert("Invalid choice. Please enter 'rock', 'paper', or 'scissors'.");
             return getHumanChoice();
         }
-    }
+    };
 
     function getComputerChoice() {
         const choices = ["rock", "paper", "scissors"];
         return choices[Math.floor(Math.random() * choices.length)];
     };    
     
-    function playRound(humanChoice, computerChoice) {
+    function playRound(humanChoice,computerChoice) {
 
         humanChoice = getHumanChoice();
         computerChoice = getComputerChoice();
@@ -53,7 +53,6 @@
         console.log("-------------------");
     };
 
-
     function nameWinner() {
         if (humanScore > computerScore) {
             console.log("Congratulations! You won the game!");
@@ -63,14 +62,14 @@
             console.log("The game is a tie!");
         }
     }
-
-    let humanChoice, computerChoice;
     
-    playRound(humanChoice, computerChoice);
-    playRound(humanChoice, computerChoice)
-    playRound(humanChoice, computerChoice);
-    playRound(humanChoice, computerChoice);
-    playRound(humanChoice, computerChoice);
+    let humanChoice,computerChoice;
+
+    playRound(humanChoice,computerChoice);
+    playRound(humanChoice,computerChoice);
+    playRound(humanChoice,computerChoice);
+    playRound(humanChoice,computerChoice);
+    playRound(humanChoice,computerChoice);
 
     nameWinner();
 
