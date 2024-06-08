@@ -1,0 +1,12 @@
+.choicesWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 36rem;
+    margin: auto;
+    padding-top: 45vh;
+}
+
+.rock, .paper, .scissors {
+    height: 3rem;
+    width: 6rem;
+}
